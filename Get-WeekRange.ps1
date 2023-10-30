@@ -1,3 +1,22 @@
+#------------------------------------------------------------------------------------------------
+# Function..: Get-WeekRange
+# Author....: Robert C. Cain | @ArcaneCode | http://arcanecode.me
+# Purpose...: Return text in the format:
+#               YYYY-MM-DD to YYYY-MM-DD
+#
+# Parameters:
+#   StartingDate - The date to begin generating from
+#   NumberOfWeeks - The number of weeks to generate
+#
+# Notes
+#   When the dates are generated the end results are placed into the clipboard.
+#
+#   This code is Copyright (c) 2023 Robert C. Cain. All rights reserved.
+#
+#   The code herein is for demonstration purposes. No warranty or guarantee
+#   is implied or expressly granted.
+#
+#------------------------------------------------------------------------------------------------
 function Get-WeekRange ()
 {
   [CmdletBinding()]
@@ -5,7 +24,7 @@ function Get-WeekRange ()
           [Parameter( Mandatory = $true ) ]
             [datetime]$StartingDate,
           [Parameter( Mandatory = $true ) ]
-            [int]$NumberOFWeeks
+            [int]$NumberOfWeeks
         )
 
   # Hold the output
